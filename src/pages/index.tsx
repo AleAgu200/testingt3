@@ -19,7 +19,7 @@ const Home: NextPage = () => {
           {!user.isSignedIn && (
             <div>
               <h1> Sign in </h1>
-              <SignInButton />
+              <SignInButton redirectUrl="/home/" />
             </div>
           )}
           {!!user.isSignedIn && (
